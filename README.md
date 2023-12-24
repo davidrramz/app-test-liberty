@@ -1,7 +1,14 @@
 <h1 align="center"> Prueba técnica DevOps </h1>
 
-<em> # Requisitos de la prueba </em>
+## Tabla de Contenidos
+1. [Requisitos de la prueba](#requisitos-de-la-prueba)
+2. [Herramientas usadas](#herramientas-usadas)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
 
+### Requisitos de la prueba
+***
 Para el desarrollo de esta prueba, los requisitos presentados eran los siguientes:
 
 - Servidor de base de datos en docker (no importa el motor que escojas), al construir el docker debe crear una tabla con información dummy cargada desde un archivo SQL
@@ -12,8 +19,8 @@ Además, la infraestructura debía crearse con alguna herramienta de IaC y se de
 
 Por limitaciones de varias naturalezas, como por ejemplo mi falta de experiencia en el desarrollo de aplicaciones web, algunos de estos requisitos no pudieron ser cumplidos a cabalidad, pero se reforzó en otros aspectos en los que tengo más experiencia. 
 
-<em> # Herramientas usadas </em>
-
+### Herramientas usadas
+***
 Las herramientas utilizadas para este proyecto fueron:
 - Github como repository vendor
 - Terraform para IaC
