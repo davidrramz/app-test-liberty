@@ -3,7 +3,7 @@
 ## Tabla de Contenidos
 1. [Requisitos de la prueba](#requisitos-de-la-prueba)
 2. [Herramientas usadas](#herramientas-usadas)
-3. [Características de esta solución](#caracteristicas-de-esta-solucion)
+3. [Características de esta solución](#características-de-esta-solución)
 4. [Collaboration](#collaboration)
 5. [FAQs](#faqs)
 
