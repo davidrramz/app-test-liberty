@@ -18,7 +18,7 @@ Además, la infraestructura debía crearse con alguna herramienta de IaC y se de
 
 Por limitaciones de varias naturalezas, como por ejemplo mi falta de experiencia en el desarrollo de aplicaciones web, algunos de estos requisitos no pudieron ser cumplidos a cabalidad, pero se reforzó en otros aspectos en los que tengo más experiencia. 
 
-### Herramientas usadas
+## Herramientas usadas
 ***
 
 Las herramientas utilizadas para este proyecto fueron:
@@ -28,7 +28,7 @@ Las herramientas utilizadas para este proyecto fueron:
 - Docker Swarm para orquestación de contenedores
 - AWS como cloud vendor
 
-### Características de esta solución
+## Características de esta solución
 ***
 
 La aplicación está construída en NodeJs y consiste en dos microservicios contenerizados (uno para back-end y otro para front-end) y una base de datos en memoria. Esto último dada mi falta de experiencia en la construcción de aplicaciones como lo mencioné anteriormente; sin embargo no es un inconveniente dificil de resolver con la propuesta de infraestructura expuesta en este proyecto.
@@ -38,7 +38,7 @@ En la construcción de la infraestructura se optó por normalizar los nombres co
 Para la implementación de CICD el enfoque que se tomó fue el de construir las imágenes de la aplicación para posteriormente publicarlas en sus respectivos repositorios de docker. Esto ocurrirá cada que haya un nuevo push en la rama main.
 
 
-### Instrucciones para replicar el ejercicio
+## Instrucciones para replicar el ejercicio
 
 Para replicar el ejercicio deben seguirse las siguientes instrucciones:
 
