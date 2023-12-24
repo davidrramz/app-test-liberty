@@ -4,8 +4,7 @@
 1. [Requisitos de la prueba](#requisitos-de-la-prueba)
 2. [Herramientas usadas](#herramientas-usadas)
 3. [Características de esta solución](#características-de-esta-solución)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+4. [Instrucciones para replicar el ejercicio](#instrucciones-para-replicar-el-ejercicio)
 
 ### Requisitos de la prueba
 ***
@@ -39,7 +38,7 @@ En la construcción de la infraestructura se optó por normalizar los nombres co
 Para la implementación de CICD el enfoque que se tomó fue el de construir las imágenes de la aplicación para posteriormente publicarlas en sus respectivos repositorios de docker. Esto ocurrirá cada que haya un nuevo push en la rama main.
 
 
-<em> # Instrucciones para replicar el ejercicio </em>
+### Instrucciones para replicar el ejercicio
 
 Para replicar el ejercicio deben seguirse las siguientes instrucciones:
 
