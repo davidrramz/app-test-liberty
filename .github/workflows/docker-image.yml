@@ -1,0 +1,39 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: docker login
+      env:
+        DOCKER_USER: ${{secrets.DOCKERHUB_USER}}
+        DOCKER_PASS: ${{secrets.DOCKERHUB_PASS}}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASS
+    
+    - name: Build the Docker image Front
+      working-directory: ./red_bicicletas
+      run: docker build . --file Dockerfile --tag davidrramz/bicicletas_front:latest
+      
+    - name: Docker Push Front
+      working-directory: ./red_bicicletas
+      run: docker push davidrramz/bicicletas_front
+
+    - name: Build the Docker image
+      working-directory: ./crud_service
+      run: docker build . --file Dockerfile --tag davidrramz/bicicletas_back:latest
+      
+    - name: Docker Push
+      working-directory: ./crud_service
+      run: docker push davidrramz/bicicletas_back

@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+    .container
+      a.navbar-brand(href='#') Start Bootstrap
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Nosotros
+          li.nav-item
+            a.nav-link(href='/bicicletas') Bicicletas
+          li.nav-item
+            a.nav-link(href='#') Contacto
+  // Page Content
+  .container
+    // Heading Row
+    .row.align-items-center.my-5
+      .col-lg-7
+        img.img-fluid.rounded.mb-4.mb-lg-0(src='/images/MountainBikerDownRock-1024x683.jpg' alt='')
+      // /.col-lg-8
+      .col-lg-5
+        h1.font-weight-light Red de Bicicletas
+        p
+          | Primer red de Bicicleteros Urbanos, Inscribete y disfruta
+        a.btn.btn-primary(href='#') Inscribete aqui
+      // /.col-md-4
+      // /.row
+      // Call to Action Well
+      .card.text-white.bg-secondary.my-5.py-4.text-center
+        .card-body
+          p.text-white.m-0
+            | Es una red de bicicletas que se creo para compartir entre todos aquellos amates de la Bicicleta.
+      // Content Row
+      .container
+        #main_map
+        p.card-text
+      .row
+        .col-md-4.mb-5
+          .card.h-100
+            .card-body
+              h2.card-title Paseos
+              p.card-text
+                | Son paseos programados, donde podras compartir con amigos y hacer nuevos
+            .card-footer
+              a.btn.btn-primary.btn-sm(href='#') More Info
+        // /.col-md-4
+        .col-md-4.mb-5
+          .card.h-100
+            .card-body
+              h2.card-title Rutas
+              p.card-text
+                | Los Fines de semana haremos ruta con al menos 120 KM de recorrido, Animate!!
+            .card-footer
+              a.btn.btn-primary.btn-sm(href='#') More Info
+        // /.col-md-4
+        .col-md-4.mb-5
+          .card.h-100
+            .card-body
+              h2.card-title Competencias!!
+              p.card-text
+                | Las competencias nacionales son la cuspide, animate a ser un profesional en nuestro Club.
+            .card-footer
+              a.btn.btn-primary.btn-sm(href='#') More Info
+        // /.col-md-4
+        // /.row
+        // /.container
+        // Footer
+        footer.py-5.bg-dark
+          .container
+            p.m-0.text-center.text-white Copyright &copy; Your Website 2020
+          // /.container
+          // Bootstrap core JavaScript
+          script(src='/vendor/jquery/jquery.min.js')
+          script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
+          script(src='/javascripts/map.js')
+
+

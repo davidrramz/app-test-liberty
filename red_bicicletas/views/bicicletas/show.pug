@@ -1,0 +1,30 @@
+extends ../layout
+block content
+  a(href='/bicicletas') Volver
+  br
+  br
+  br
+  h1 Mostrar bicicleta
+  br
+  br
+
+  form()
+    label(for='id') ID:
+    input#id(type='text' name='id' value=bici.id , readonly)
+    br
+    label(for='color') Color:
+    input#id(type='text' name='color' value= bici.color , readonly)
+    br
+    label(for='modelo') Modelo:
+    input#id(type='text' name='modelo' value= bici.modelo , readonly)
+    br
+    label(for='lat') Latitud:
+    input#id(type='text' name='lat' value= bici.ubicacion[0] , readonly)
+    br
+    label(for='lng') Longitud:
+    input#id(type='text' name='lng' value= bici.ubicacion[1] , readonly )
+    br
+    br
+
+
+

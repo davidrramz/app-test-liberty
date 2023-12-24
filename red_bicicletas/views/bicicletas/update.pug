@@ -1,0 +1,36 @@
+extends ../layout
+block content
+  a(href='/bicicletas') Volver
+  br
+  br
+  br
+  h1 Modificar bicicleta
+  br
+  br
+
+  form.inline(action=`/api/bicicletas/${bici.id}/update`,method='post')
+    label(for='id') ID:
+    input#id(type='text' name='id' value=bici.id, readonly)
+    br
+    label(for='color') Color:
+    select(name='color', id='', required)
+      each val in ['--select--','Blanco' , 'Negro' , 'Rojo','Verde']
+        option(value=(val==bici.color ? bici.color : val) selected=(val == bici.color) ) #{val}
+
+    br
+    label(for='modelo') Modelo:
+    select(name='modelo', id='', required)
+      each val in ['--select--','Ruta' , 'Cross' , 'Montian','Turismo']
+        option(value=(val==bici.modelo? bici.modelo : val) selected=(val == bici.modelo) ) #{val}
+    //input#id(type='text' name='modelo' value= bici.modelo, required)
+    br
+    label(for='lat') Latitud:
+    input#id(type='text' name='lat' value= bici.ubicacion[0], required)
+    br
+    label(for='lng') Longitud:
+    input#id(type='text' name='lng' value= bici.ubicacion[1], required)
+    br
+    br
+    input.btn(type='submit' name='OK')
+
+
