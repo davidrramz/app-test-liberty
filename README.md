@@ -3,7 +3,7 @@
 ## Tabla de Contenidos
 1. [Requisitos de la prueba](#requisitos-de-la-prueba)
 2. [Herramientas usadas](#herramientas-usadas)
-3. [Installation](#installation)
+3. [Características de esta solución](#caracteristicas-de-esta-solucion)
 4. [Collaboration](#collaboration)
 5. [FAQs](#faqs)
 
@@ -21,6 +21,7 @@ Por limitaciones de varias naturalezas, como por ejemplo mi falta de experiencia
 
 ### Herramientas usadas
 ***
+
 Las herramientas utilizadas para este proyecto fueron:
 - Github como repository vendor
 - Terraform para IaC
@@ -28,7 +29,8 @@ Las herramientas utilizadas para este proyecto fueron:
 - Docker Swarm para orquestación de contenedores
 - AWS como cloud vendor
 
-<em> # Características de esta solución </em>
+### Características de esta solución
+***
 
 La aplicación está construída en NodeJs y consiste en dos microservicios contenerizados (uno para back-end y otro para front-end) y una base de datos en memoria. Esto último dada mi falta de experiencia en la construcción de aplicaciones como lo mencioné anteriormente; sin embargo no es un inconveniente dificil de resolver con la propuesta de infraestructura expuesta en este proyecto.
 
