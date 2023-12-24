@@ -2,9 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
 
@@ -30,10 +29,10 @@ jobs:
       working-directory: ./red_bicicletas
       run: docker push davidrramz/bicicletas_front
 
-    - name: Build the Docker image
+    - name: Build the Docker image Back
       working-directory: ./crud_service
       run: docker build . --file Dockerfile --tag davidrramz/bicicletas_back:latest
       
-    - name: Docker Push
+    - name: Docker Push Back
       working-directory: ./crud_service
       run: docker push davidrramz/bicicletas_back
