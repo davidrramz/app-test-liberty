@@ -7,7 +7,7 @@
 4. [Instrucciones para replicar el ejercicio](#instrucciones-para-replicar-el-ejercicio)
 
 ### Requisitos de la prueba
-***
+
 Para el desarrollo de esta prueba, los requisitos presentados eran los siguientes:
 
 - Servidor de base de datos en docker (no importa el motor que escojas), al construir el docker debe crear una tabla con información dummy cargada desde un archivo SQL
@@ -19,7 +19,6 @@ Además, la infraestructura debía crearse con alguna herramienta de IaC y se de
 Por limitaciones de varias naturalezas, como por ejemplo mi falta de experiencia en el desarrollo de aplicaciones web, algunos de estos requisitos no pudieron ser cumplidos a cabalidad, pero se reforzó en otros aspectos en los que tengo más experiencia. 
 
 ## Herramientas usadas
-***
 
 Las herramientas utilizadas para este proyecto fueron:
 - Github como repository vendor
@@ -29,7 +28,6 @@ Las herramientas utilizadas para este proyecto fueron:
 - AWS como cloud vendor
 
 ## Características de esta solución
-***
 
 La aplicación está construída en NodeJs y consiste en dos microservicios contenerizados (uno para back-end y otro para front-end) y una base de datos en memoria. Esto último dada mi falta de experiencia en la construcción de aplicaciones como lo mencioné anteriormente; sin embargo no es un inconveniente dificil de resolver con la propuesta de infraestructura expuesta en este proyecto.
 
